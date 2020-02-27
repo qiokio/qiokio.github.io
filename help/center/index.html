@@ -1,3 +1,52 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=11" id="mixia_vpid">
+  <title>QIOKIO的个人世界</title>
+  <meta name="keywords" content="QIOKIO的个人世界"/>
+  <meta name="description" content="QIOKIO的个人世界" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">    
+  <link rel="stylesheet" href="css/main.css">
+  </head>
+
+<body>
+<script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+var a_idx = 0;
+jQuery(document).ready(function($) {
+$("body").click(function(e) {
+var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+var $i = $("<span/>").text(a[a_idx]);
+a_idx = (a_idx + 1) % a.length;
+var x = e.pageX,
+y = e.pageY;
+$i.css({
+"z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+"top": y - 20,
+"left": x,
+"position": "absolute",
+"font-weight": "bold",
+"color": "#ff6651"
+});
+$("body").append($i);
+$i.animate({
+"top": y - 180,
+"opacity": 0
+},
+1500,
+function() {
+$i.remove();
+});
+});
+});
+</script>
+
+</body>
+
+
 <section data-role="outer" label="Powered by 135editor.com" style="font-size:16px;">
 <section class="_135editor" data-tools="135编辑器" data-id="96634" data-color="rgb(34,">
 <section style="margin:10px auto;">
@@ -30,3 +79,6 @@
 </section>
 </section>
 </section>
+
+
+</html>
